@@ -1,0 +1,29 @@
+.hero {
+    margin-block-start: 4rem;
+    display: flex;
+    
+    &__text {
+        flex: 1 0 300px;
+        font-size: 1.2rem;
+        padding-block-end: 4rem;
+    }
+
+    &__btns {
+        margin-block-start: var(--block-gap);
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: var(--main-gap);
+
+        & > a {
+            
+        }
+    }
+
+    &__img {
+        // background-color: var(--bg-dark-shadow);
+        flex: 1 0 450px;
+        align-self: flex-end;
+        max-height: 688px;
+    }
+}

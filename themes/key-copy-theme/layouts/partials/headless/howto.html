@@ -1,0 +1,28 @@
+{{ $headless := site.GetPage "/headless" }}
+{{ with $headless.Resources.GetMatch "howto*" }}
+<section class="howto width-wrapper">
+    <div class="howto__content">
+        <h2>{{ .Title }}</h2>
+        {{ .Content }}</div>    
+    <ul class="howto__cards">
+        {{ range .Params.Cards }}
+        <li class="howto__card">
+            <svg width="60px" height="60px" role="presentation">
+                <use xlink:href="#icon-{{ .icon }}"></use>
+            </svg>
+            <h3>{{ .header }}</h3>
+            <p>{{ .text }}</p>
+        </li>
+        {{ end }}
+    </ul>
+    <div class="howto__youtube">
+        <iframe
+            loading="lazy" width="560" height="315"
+            src="https://www.youtube-nocookie.com/embed/{{ .Params.youtube }}"
+            title="{{ .Title }}" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+{{ end }}

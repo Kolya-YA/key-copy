@@ -1,0 +1,22 @@
+.header{
+    position: relative;
+    margin-block-end: var(--block-gap);
+
+    
+    &--bg {
+        color: var(--clr-font-light);
+        background: var(--grad-primary);
+    }
+
+    &__border {
+        height: 70px;
+        position: absolute;
+        top: auto;
+        inset: auto 0 0;
+        
+        & > svg {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

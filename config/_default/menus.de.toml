@@ -1,0 +1,34 @@
+[[main]]
+name = 'Schlüssel nachmachen'
+URL = '/#inquiry'
+weight = 10
+
+[[main]]
+name = 'Über uns'
+URL = '/#about'
+weight = 20
+
+[[main]]
+name = 'Preise'
+URL = '/#pricing'
+weight = 30
+
+[[main]]
+name = 'Bewertungen'
+URL = '/#reviews'
+weight = 40
+
+[[main]]
+name = 'Store Berlin'
+URL = '/#berlin'
+weight = 50
+
+[[main]]
+name = 'FAQ'
+URL = '/#faq'
+weight = 60
+
+[[leagl]]
+name = 'Impressum'
+pageRef = '/imprint'
+weight = 70

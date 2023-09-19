@@ -1,0 +1,18 @@
+
+{{ if .IsTranslated }}
+<div class="i18n">
+
+    <button class="i18n__open" type="button">{{ site.Language }}</button>
+    <dialog class="i18n__dialog" id="i18n-dialog">
+        <button class="i18n__close" type="button">╳</button>
+        <ul class="lang-menu">
+            <li>{{ site.Language.LanguageName }}</li>
+            {{ range .Translations }}
+            <li class="lang-menu__item">
+                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </dialog>
+</div>
+{{ end }}

@@ -1,0 +1,29 @@
+[[main]]
+name = 'Copy your key!'
+pageRef = '/#inquiry'
+weight = 10
+
+[[main]]
+name = 'About'
+pageRef = '/#about'
+weight = 20
+
+[[main]]
+name = 'Preices'
+pageRef = '/#pricing'
+weight = 30
+
+[[main]]
+name = 'Reviews'
+pageRef = '/#reviews'
+weight = 40
+
+[[main]]
+name = 'Store Berlin'
+pageRef = '/#berlin'
+weight = 50
+
+[[main]]
+name = 'FAQ'
+pageRef = '/#faq'
+weight = 60

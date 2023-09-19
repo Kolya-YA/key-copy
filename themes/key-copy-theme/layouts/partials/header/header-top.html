@@ -1,0 +1,31 @@
+<div class="header__top">
+    <div class="header__top-inner width-wrapper">
+        {{ with  site.Params.Social }}
+        <div class="header__social">
+            {{ or (T "followUs") "Follow us on: " }}
+            {{ range . }}
+            <a href="{{ (index . 2) | absURL }}" title= "{{ index . 0 }}" target="_blank" rel="noopener noreferrer">
+                <svg width="1.1em" height="1.1em">
+                    <use xlink:href="#icon-{{ index . 1 }}"></use>
+                </svg>
+            </a> 
+            {{ end }}
+        </div>    
+        {{ end }}
+        <div class="header__contacts">
+            <a href="mailto:{{ site.Params.email }}">
+                <svg width="1.1em" height="1.1em">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+                {{ site.Params.email }}
+            </a>
+            <a href="tel:{{ site.Params.phoneMob }}">
+                <svg width="1.1em" height="1.1em">
+                    <use xlink:href="#icon-phone"></use>
+                </svg>
+                {{ site.Params.phoneMob }}
+            </a>
+        </div>
+        {{ partial "common/i18nlist.html" . }}
+    </div>
+</div>

@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+    min-width: 360px;
+    // display: grid;
+    // grid-template-rows: auto 1fr auto;
+    // margin: 0;
+    // font-family: var(--common-font-family);
+    font-size: var(--base-font-size);
+    line-height: var(--base-line-height);
+    background-color: var(--body-bg-color);
+    // background-image: var(--body-bg-img);
+    // color: var(--main-text-color);
+    
+    & > section {
+        margin-block-start: var(--block-gap);
+    }
+
+    .svg-icons {
+        display: none;
+    }
+}

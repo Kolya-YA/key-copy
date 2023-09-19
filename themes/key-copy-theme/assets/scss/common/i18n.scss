@@ -1,0 +1,39 @@
+.i18n {
+    position: relative;
+    color: var(--clr-font-dark);
+
+    &__open,
+    &__close {
+        cursor: pointer;
+        border: none;
+        text-transform: uppercase;
+        background: var(--bg-dark-shadow);
+        border-radius: 100vw;
+    }
+    &__close {
+        color: inherit;
+    }
+
+    &__dialog {
+        inset-block: auto;
+        inset-inline: auto 0;
+        padding: 0;
+        border: none;
+
+
+
+        &::backdrop {
+            background: var(--bg-dark-shadow);
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: var(--main-gap);
+        list-style: none;
+        
+        a {
+            color: inherit;
+        }
+    }
+}

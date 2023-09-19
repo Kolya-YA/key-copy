@@ -1,0 +1,10 @@
+.header__main {
+    display: flex;
+    align-items: center;
+    gap: var(--main-gap);
+}
+
+.header__logo {
+    margin-block: var(--main-gap);
+    margin-inline-end: auto;
+}

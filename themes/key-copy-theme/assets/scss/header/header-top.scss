@@ -1,0 +1,20 @@
+.header__top {
+    padding-block: calc(var(--main-gap) / 2);
+    background-color: var(--bg-light-shadow);
+
+    &-inner {
+        display: flex;
+        gap: var(--main-gap);
+        align-items: center;
+        color: var(--clr-font-light);
+    }
+
+    & * {
+        color: inherit;
+    }
+}
+
+.header__social {
+    margin-inline-end: auto;
+}
+

@@ -1,0 +1,34 @@
+{{ define "header" }}
+{{ $imgPath := path.Join "images" site.Params.heroImg }}
+{{ $heroImg := resources.Get $imgPath }}
+<header class="header header--bg">
+  {{ partial "header/header.html" . }}
+  <div class="width-wrapper">
+    <section class="hero">
+      <div class="hero__text">
+        {{ .Content }}
+        <div class="hero__btns">
+          <a href="http://" class="link-btn link-btn--white">{{ or (T "copyOnline") "Key copy online" }}</a>
+          <a href="http://" class="link-btn">{{ or (T "copyBerlin") "Key copy Berlin" }}</a>
+        </div>
+      </div>
+      {{ with $heroImg }}
+      <div class="hero__img">
+        <img src="{{ .RelPermalink }}" alt="">
+      </div>
+      {{ end }}
+    </section>
+  </div>
+  <div class="header__border">
+    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 120">
+      <path fill-rule="evenodd" fill="currentColor"
+      d="M0,55.9621684 C300.495844,106.578393 620.495844,106.578393 960,55.9621684 C1299.50416,5.34594386 1619.50416,5.34594386 1920,55.9621684 L1920,120 L0,120 L0,55.9621684 Z">
+      </path>
+    </svg>
+  </div>
+</header>
+{{ end }}
+
+{{define "main" }}
+    {{ partial "headless/howto.html" }}
+{{ end }}

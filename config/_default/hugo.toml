@@ -1,0 +1,27 @@
+baseURL = 'https://example.org/'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+theme = 'key-copy-theme'
+title = 'key-copy.com'
+
+disableKinds = ['taxonomy', 'term']
+
+[Params]
+  logo = 'key-copy-logo.svg'
+  heroImg = 'iphone2.webp'
+  subTitle = 'Powerd by Schlüssel.discount'
+  email = 'info@key-copy.com'
+  phoneMob = '+49 17662223755'
+  phoneOffice = '+49 30 250 555 118'
+  whatsApp = ''
+  telegram = ''
+  addrLogo = 'sd-logo.svg'
+  addrOffice = [
+    'Schlüssel Discount',
+    'Brunnenstraße 8',
+    '10119 Berlin, Germany'
+  ]
+  social = [
+    ['Facebook', 'facebook', 'https://www.facebook.com/KEY-COPYcom-415273702665443']
+  ]
+  copyright = 'Key-Copy.com | OWSD Werbe- und Sicherheitsshop GmbH'

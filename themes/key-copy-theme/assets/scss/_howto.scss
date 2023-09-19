@@ -1,0 +1,33 @@
+.howto {
+    text-align: center;
+
+    &__content {
+        text-wrap: balance;
+    }
+
+    &__cards {
+        display: flex;
+        gap: var(--block-gap);
+        margin-block: var(--block-gap);
+        margin-inline: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__card {
+        padding-block: var(--block-gap);
+
+        img {
+            margin-inline: auto;
+        }
+
+        h3, p {
+            margin-block-start: var(--main-gap);
+        }
+    }
+
+    &__youtube {
+
+      
+    }
+}

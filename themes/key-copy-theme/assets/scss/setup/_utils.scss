@@ -1,0 +1,32 @@
+.width-wrapper {
+    width: calc(min(1280px, 100vw));
+    margin: 0 auto;
+    padding-inline: var(--main-gap);
+}
+
+.mobile-only {
+    @media (min-width: 52em) {
+        --desktop-block: none;
+        // --toggler-display: none;
+        // --nav-visibility: visible;
+        // --desktop-border: none;
+        // --desktop-margin: none;
+        // --desktop-padding: none;
+        // --desktop-transform: none;
+        // --desktop-size: auto;
+        // --desktop-ul-display: flex;
+        // --desktop-position: static;
+    }
+
+    display: var(--desktop-block, block);
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }

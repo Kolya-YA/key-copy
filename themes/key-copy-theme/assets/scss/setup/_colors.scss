@@ -1,0 +1,17 @@
+:root,
+::backdrop {
+    --clr-primary-rgb: 242 0 0;
+    --clr-secondary-rgb: 255 155 0;
+    --clr-light-rgb: 236 236 236;
+    --clr-dark-rgb: 48 48 48;
+
+    --clr-font-dark: rgb(var(--clr-dark-rgb));
+    --clr-font-light: rgb(var(--clr-light-rgb));
+
+    --bg-primary: rgb(var(--clr-primary-rgb));
+    --bg-secondry: rgb(var(--clr-secondary-rgb));
+    --bg-light-shadow: rgb(var(--clr-light-rgb)/ .15);
+    --bg-dark-shadow: rgb(var(--clr-dark-rgb)/ .2);
+
+    --grad-primary: linear-gradient(45deg, var(--bg-primary) 0%, var(--bg-secondry) 128%);
+}

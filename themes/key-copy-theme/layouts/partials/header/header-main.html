@@ -1,0 +1,27 @@
+{{ $logo := resources.Get "images/key-copy-logo.svg" }}
+<div class="header__main width-wrapper">
+    <a class="header__logo" href="/">
+        {{ with $logo }}
+        <img src="{{ .RelPermalink }}" width="330" height="42" alt="{{ site.Title }} logo">
+        <div class="visually-hidden">
+        {{ else }}
+        <div>
+        {{ end }}
+            <p>{{ site.Title }}<br>{{ site.Params.SubTitle }}</p>
+        </div>
+    </a>
+    <div class="header__menu">
+        <div class="mobile-only">
+            {{ partial "common/i18nlist.html" . }}
+            
+            <div class="header__contacts">
+                <a href="mailto:{{ site.Params.email }}">icon {{ site.Params.email }}</a>
+                —|—
+                <a href="tel:{{ site.Params.phoneMob }}">icon {{ site.Params.phoneMob }}</a>
+            </div>
+        </div>
+        <div class="header__nav">
+            {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+        </div>
+    </div>
+</div>

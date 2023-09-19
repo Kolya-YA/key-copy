@@ -1,0 +1,21 @@
+[en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 1
+[de]
+    contentDir = 'content/de'
+    disabled = false
+    languageCode = 'de-DE'
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    weight = 2
+[ar]
+    contentDir = 'content/ar'
+    disabled = false
+    languageCode = 'ar'
+    languageDirection = 'rtl'
+    languageName = 'Arabic'
+    weight = 3

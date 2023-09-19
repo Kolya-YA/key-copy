@@ -1,0 +1,29 @@
+[[main]]
+name = 'انسخ مفتاحك!'
+URL = '/#inquiry'
+weight = 10
+
+[[main]]
+name = 'معلومات عنا'
+URL = '/#about'
+weight = 20
+
+[[main]]
+name = 'أسعار'
+URL = '/#pricing'
+weight = 30
+
+[[main]]
+name = 'استعراض'
+URL = '/#reviews'
+weight = 40
+
+[[main]]
+name = 'متجر في برلين'
+URL = '/#berlin'
+weight = 50
+
+[[main]]
+name = 'FAQ'
+URL = '/#faq'
+weight = 60
