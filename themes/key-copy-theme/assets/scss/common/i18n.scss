@@ -10,6 +10,13 @@
         background: var(--bg-dark-shadow);
         border-radius: 100vw;
     }
+
+    &__open {
+        display: grid;
+        place-content: center;
+        padding: 6px;
+    }
+
     &__close {
         color: inherit;
     }
@@ -19,8 +26,6 @@
         inset-inline: auto 0;
         padding: 0;
         border: none;
-
-
 
         &::backdrop {
             background: var(--bg-dark-shadow);

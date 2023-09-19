@@ -2,7 +2,14 @@
 {{ if .IsTranslated }}
 <div class="i18n">
 
-    <button class="i18n__open" type="button">{{ site.Language }}</button>
+    <button class="i18n__open" type="button">
+        <svg width="1.1em" height="1.1em">
+            <use xlink:href="#icon-i18n"></use>
+        </svg>
+        <span class="visually-hidden">
+            {{ site.Language }}
+        </span>
+    </button>
     <dialog class="i18n__dialog" id="i18n-dialog">
         <button class="i18n__close" type="button">╳</button>
         <ul class="lang-menu">
