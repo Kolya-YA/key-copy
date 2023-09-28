@@ -16,5 +16,27 @@
 
 .header__social {
     margin-inline-end: auto;
+    display: flex;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        svg > use {
+            fill: var(--clr-font-light);
+        }
+    }
 }
 
+.header__contacts {
+    display: flex;
+    gap: var(--main-gap);
+
+    & > a {
+        display: flex;
+        align-items: center;
+        gap: calc(var(--main-gap) / 2);
+        text-decoration: none;
+    }
+}
